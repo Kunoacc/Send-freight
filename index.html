@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="script.js"></script>
+
+    <title>Send Freight</title>
+</head>
+<body>
+    <div class="freight__container">
+        <div class="nav__bar">
+            <div>
+                <p class="freight"><span class="send">send</span><span class="fre">FREIGHT</span></p>
+            </div>
+            <div class="search-box">
+                <form class="search-form">
+                    <input type="text" class="search" placeholder="Search">
+                </form>
+            </div>
+            <div class="btn">
+                <button class="request">
+                    <p>Request Quote</p>
+                </button>
+            </div>
+            <div class="btn">
+                <button class="shipment">
+                    <p>Book Shipment</p>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="info">
+            <div class="arrow"><i class="uil uil-arrow-left"></i></div>
+            <div>
+                <p class="new">New Booking</p>
+                <p class="sub">Fill in the information below to get a quote or create a new booking</p>
+            </div>
+        </div>
+
+        <div class="grid-row-1">
+            <p class="service">Select a service</p>
+            <div class="background">
+                <div class="column">
+                    <p>Air Freight</p>
+                    <div class="icon">
+                        <i class="uil uil-plane"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="background">
+                <div class="column">
+                    <p>Sea Freight</p>
+                    <div class="icon">
+                        <i class="uil uil-gift"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="background">
+                <div class="column">
+                    <p>Inland<br>(Truck & Barge)</p>
+                    <div class="icon2">
+                        <i class="uil uil-truck"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="background">
+                <div class="column">
+                    <p>Customs<br>Clearance</p>
+                    <div class="icon2">
+                        <i class="uil uil-lock-open-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-row-2">
+            <i class="uil uil-info-circle"></i>
+            <div class="line-1">
+                <div class="hover">
+                    <button class="import">
+                        <p>Import</p>
+                    </button>
+                </div>
+                <div class="hover">
+                    <button class="export">
+                        <p>Export</p>
+                    </button>
+                </div>
+                <div class="from">
+                    <label for="txt"><span class="location"><i class="uil uil-map-marker"></i></span>From <input type="text" class="loop" id="txt" value="" placeholder="City or port"/></label>
+                </div>
+                <div class="to">
+                    <label for="txt"><span class="location"><i class="uil uil-map-marker"></i></span>To <input type="text" id="txt" value="" placeholder="City or port"/></label>
+                </div>
+            </div>
+            <div class="line-2">
+                <div class="date">
+                    <label for="dt"><span id="date-icon"><i class="uil uil-calendar-alt"></i></span><input type="text" id="datepicker" value="" placeholder="Ready Date" size="20"></label>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Incoterms <span class="arrow"><i class="uil uil-angle-down"></i></span></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Custom shipping</a>
+                        <a href="#special">Special Orders</a>
+                        <a href="#express">Express Shipping</a>
+                    </div>
+                </div>
+                <div class="cargo">
+                    <input type="text" placeholder="Total Cargo Value" id="value">
+                </div>
+            </div>
+
+            <div class="grid-row-3">
+                <div class="line-3">
+                    <p class="details">Cargo Details</p>
+                    <div id="toggle">
+                        <div id="togg">
+                            <img src="toggle-on.PNG" alt="togg" class="toggle-on" id="toggle--on" onmouseover="this.style.cursor='pointer'" onclick="changeimg()">
+                        </div>
+                        <!-- <img src="img/toggle-off.PNG" alt="togoff" id="toggle--off"> -->
+                        <p class="danger">Dangerous Cargo (ex. Chemicals, Battery)</p>
+                    </div>
+                </div>
+                <div class="line-4">
+                            <button class="package">Package Details</button>
+                            <button class="dimensions">Total Dimensions</button>
+                    
+                </div>
+                <div class="line-5">
+                    <fieldset class="f1">
+                        <legend>Total Volume</legend>
+                        <p class="vol">cbm</p>
+                    </fieldset>
+                    <fieldset class="f2">
+                        <legend>Total Weight</legend>
+                        <p class="wt">Kg</p>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="grid-row-4">
+                <div class="line-6">
+                    <p class="additional">Additional Services</p>
+                </div>
+                <div class="line-7">
+                    <div class="flex-forward">
+                        <img class="flex-first" src="toggle-off.PNG" alt="off" id="toggle--off" onmouseover="this.style.cursor='pointer'" onclick="changeback()">
+                        <p class="flex-second"><span class="des">Export Forwarding</span><br>
+                            We handle customs clearance and documentation.</p>
+                    </div>
+                    <div class="flex-clear">
+                        <img class="flex-first" src="toggle-off.PNG" alt="off" id="toggle--of" onmouseover="this.style.cursor='pointer'" onclick="changebac()">
+                        <p class="flex-second"><span class="des">Import Customs Clearance</span><br>
+                        We handle import customs and regulatory requirements.</p>
+                    </div>
+                </div>
+                <div class="line-8">
+                    <div class="flex-forward">
+                        <img class="flex-first" src="toggle-off.PNG" alt="off" id="toggle--ff" onmouseover="this.style.cursor='pointer'" onclick="changebak()">
+                        <p class="flex-second"><span class="des">Cargo Insurance</span><br>
+                            Protect your cargo from logistics risks up to its full value.</p>
+                    </div>
+                    <div class="flex-clear">
+                        <img class="flex-first" src="toggle-off.PNG" alt="off" id="toggle--" onmouseover="this.style.cursor='pointer'" onclick="changeba()">
+                        <p class="flex-second"><span class="des">Transport / Delivery</span><br>
+                        We deliver your cargo to your doorstep from the ports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

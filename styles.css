@@ -1,0 +1,612 @@
+body {
+  margin: auto;
+  background-color: #f1f2f6;
+}
+
+.freight__container {
+  height: auto;
+}
+
+.freight__container .nav__bar {
+  background-color: #0746a7;
+  padding: 1%;
+  position: relative;
+  width: 100%;
+}
+
+.freight__container .nav__bar .freight {
+  color: #c5ddee;
+  padding-left: 3%;
+  letter-spacing: 3px;
+}
+
+.freight__container .nav__bar .freight .send {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.freight__container .nav__bar .freight .fre {
+  font-weight: bold;
+}
+
+.freight__container .nav__bar .search {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: -3%;
+  padding: .5rem 13rem .5rem 2rem;
+  background-color: #3a6bb8;
+  border: none;
+  outline: none;
+  color: #c5ddee;
+}
+
+.freight__container .nav__bar ::-webkit-input-placeholder {
+  color: #76a1e5;
+}
+
+.freight__container .nav__bar :-ms-input-placeholder {
+  color: #76a1e5;
+}
+
+.freight__container .nav__bar ::-ms-input-placeholder {
+  color: #76a1e5;
+}
+
+.freight__container .nav__bar ::placeholder {
+  color: #76a1e5;
+}
+
+.freight__container .nav__bar .btn {
+  position: relative;
+}
+
+.freight__container .nav__bar .btn :hover {
+  background-color: #5bc688;
+  color: #defee4;
+  font-weight: bold;
+  border: none;
+}
+
+.freight__container .nav__bar .request {
+  position: absolute;
+  margin-left: 65%;
+  margin-top: -3.5%;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #0746a7;
+  border: 2px solid #7fa1e1;
+  color: #daf3f8;
+  font-weight: bold;
+}
+
+.freight__container .nav__bar .request p {
+  padding: .05rem 2rem;
+  letter-spacing: 1px;
+  line-height: 1rem;
+}
+
+.freight__container .nav__bar .shipment {
+  position: absolute;
+  margin-left: 81%;
+  margin-top: -3.5%;
+  border-radius: 10px;
+  line-height: 1rem;
+  cursor: pointer;
+  background-color: #0746a7;
+  border: 2px solid #7fa1e1;
+  color: #daf3f8;
+  font-weight: bold;
+}
+
+.freight__container .nav__bar .shipment p {
+  padding: .05rem 2rem;
+  letter-spacing: 1px;
+}
+
+.freight__container .info .arrow {
+  position: absolute;
+  margin-left: 8%;
+  margin-top: -.3rem;
+  font-size: 2rem;
+}
+
+.freight__container .info .new {
+  margin-left: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #353638;
+}
+
+.freight__container .info .sub {
+  margin-left: 15%;
+  color: #aaabb0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.freight__container .grid-row-1 {
+  margin-top: 2rem;
+  margin-left: 15%;
+  padding: 2% 3%;
+  background: white;
+  position: absolute;
+  width: 67%;
+}
+
+.freight__container .grid-row-1 .background :hover {
+  background-color: #0746a7;
+  color: white;
+}
+
+.freight__container .grid-row-1 .service {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  color: #353638;
+  padding-bottom: 1rem;
+}
+
+.freight__container .grid-row-1 .column {
+  float: left;
+  width: 14%;
+  padding: 2% 4% 3% 4%;
+  height: 50px;
+  border: 1px solid #d9d9d9;
+  position: relative;
+  margin-right: 2.6%;
+  margin-bottom: 5%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.freight__container .grid-row-1 .column p {
+  color: #828385;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+}
+
+.freight__container .grid-row-1 .column .icon {
+  font-size: 3.25rem;
+  margin-left: 80%;
+  margin-top: -20%;
+  color: #81868c;
+}
+
+.freight__container .grid-row-1 .column .icon2 {
+  font-size: 3.25rem;
+  margin-left: 80%;
+  margin-top: -28%;
+  color: #81868c;
+}
+
+.freight__container .grid-row-2 {
+  margin-top: 22rem;
+  margin-left: 15%;
+  padding: 3% 4% 10% 2%;
+  background: white;
+  position: relative;
+  width: 67%;
+  height: 25%;
+}
+
+.freight__container .grid-row-2 .line-1 {
+  margin-top: 2%;
+  width: 100%;
+}
+
+.freight__container .grid-row-2 .line-1 .hover :hover {
+  background-color: #f3f0ee;
+  color: black;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.freight__container .grid-row-2 .line-1 .import {
+  float: left;
+  padding: 0 2% 0 2%;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.freight__container .grid-row-2 .line-1 .import p {
+  line-height: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a8a9aa;
+}
+
+.freight__container .grid-row-2 .line-1 .export {
+  float: left;
+  margin-right: 5%;
+  padding: 0 2% 0 2%;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+
+.freight__container .grid-row-2 .line-1 .export p {
+  line-height: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a8a9aa;
+}
+
+.freight__container .grid-row-2 .line-1 .from {
+  float: left;
+  margin-right: 4%;
+  background-color: #f3f3f3;
+}
+
+.freight__container .grid-row-2 .line-1 .from .location {
+  padding-right: .3rem;
+  padding-left: 0.5rem;
+}
+
+.freight__container .grid-row-2 .line-1 .from ::-webkit-input-placeholder {
+  color: darkgray;
+}
+
+.freight__container .grid-row-2 .line-1 .from :-ms-input-placeholder {
+  color: darkgray;
+}
+
+.freight__container .grid-row-2 .line-1 .from ::-ms-input-placeholder {
+  color: darkgray;
+}
+
+.freight__container .grid-row-2 .line-1 .from ::placeholder {
+  color: darkgray;
+}
+
+.freight__container .grid-row-2 .line-1 .to {
+  float: left;
+  margin-right: 0%;
+}
+
+.freight__container .grid-row-2 .line-1 .to .location {
+  padding-right: .3rem;
+  padding-left: 0.5rem;
+}
+
+.freight__container .grid-row-2 .line-1 .to ::-webkit-input-placeholder {
+  color: darkgray;
+}
+
+.freight__container .grid-row-2 .line-1 .to :-ms-input-placeholder {
+  color: darkgray;
+}
+
+.freight__container .grid-row-2 .line-1 .to ::-ms-input-placeholder {
+  color: darkgray;
+}
+
+.freight__container .grid-row-2 .line-1 .to ::placeholder {
+  color: darkgray;
+}
+
+.freight__container .grid-row-2 #txt {
+  border: none;
+  outline: none;
+  margin-top: .7rem;
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.freight__container .grid-row-2 label[for="txt"] {
+  border: none;
+  padding: .6rem 5.5rem .6rem .8rem;
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.freight__container .grid-row-2 #datepicker {
+  border: none;
+  outline: none;
+  margin-top: 3.7rem;
+  background-color: #f3f3f3;
+}
+
+.freight__container .grid-row-2 label[for="dt"] {
+  border: none;
+  padding: .6rem 3rem .6rem .8rem;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.freight__container .grid-row-2 .line-2 {
+  margin-top: 1.5rem;
+  position: absolute;
+  margin-left: .3%;
+}
+
+.freight__container .grid-row-2 .line-2 #date-icon {
+  padding-right: .3rem;
+  padding-left: 0.5rem;
+}
+
+.freight__container .grid-row-2 .line-2 .dropbtn {
+  background-color: #f3f3f3;
+  color: #898989;
+  padding: 4% 85% 4% 8%;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 115%;
+  margin-top: -10%;
+}
+
+.freight__container .grid-row-2 .line-2 .dropbtn .arrow {
+  position: absolute;
+  padding-left: 65%;
+}
+
+.freight__container .grid-row-2 .line-2 .dropbtn:hover, .freight__container .grid-row-2 .line-2 .dropbtn:focus {
+  background-color: #f3f0ee;
+}
+
+.freight__container .grid-row-2 .line-2 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f3f3f3;
+  overflow: auto;
+}
+
+.freight__container .grid-row-2 .line-2 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.freight__container .grid-row-2 .line-2 .dropdown a:hover {
+  background-color: #ddd;
+}
+
+.freight__container .grid-row-2 .line-2 .show {
+  display: block;
+}
+
+.freight__container .grid-row-2 .line-2 .cargo {
+  position: absolute;
+  margin-left: 242%;
+  margin-top: -9.5%;
+  border: none;
+  padding: .5rem 5rem .6rem .8rem;
+  background-color: #f3f3f3;
+}
+
+.freight__container .grid-row-2 .line-2 .cargo #value {
+  background-color: #f3f3f3;
+  border: none;
+  outline: none;
+}
+
+.freight__container .grid-row-3 {
+  margin-top: 11rem;
+  margin-left: -3%;
+  padding: 1rem 5rem 5rem 2rem;
+  background: white;
+  position: absolute;
+  width: 90%;
+  height: 85%;
+}
+
+.freight__container .grid-row-3 .line-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.freight__container .grid-row-3 .line-3 .details {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.freight__container .grid-row-3 .line-3 #toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.freight__container .grid-row-3 .line-3 #toggle .toggle-on {
+  width: 3.5rem;
+  height: 2.2rem;
+  margin-right: 1rem;
+  margin-top: .5rem;
+  position: relative;
+}
+
+.freight__container .grid-row-3 .line-3 #toggle .toggle-off {
+  width: 3.3rem;
+  height: 2.3rem;
+  margin-right: 19rem;
+  margin-top: .5rem;
+  position: absolute;
+  visibility: hidden;
+}
+
+.freight__container .grid-row-3 .line-3 #toggle .danger {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 14px;
+  margin-top: 1.2rem;
+}
+
+.freight__container .grid-row-3 .line-4 {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+.freight__container .grid-row-3 .line-4 .package {
+  cursor: pointer;
+  padding: .9rem 3rem .7rem 13.5rem;
+  position: relative;
+  border-radius: 5px;
+  background-color: #f1f2f6;
+  color: #c3c4c9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  border: none;
+}
+
+.freight__container .grid-row-3 .line-4 .dimensions {
+  cursor: pointer;
+  padding: .6rem 2rem;
+  position: absolute;
+  margin-left: -22.4rem;
+  margin-top: .2rem;
+  border-radius: 8px;
+  background-color: white;
+  color: #7788b8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  border: none;
+}
+
+.freight__container .grid-row-3 .line-5 {
+  float: left;
+  margin-top: 5%;
+}
+
+.freight__container .grid-row-3 .line-5 .f1 {
+  float: left;
+  margin-right: 2.3rem;
+  padding-right: 4.2rem;
+  height: 2rem;
+  border: 1.8px solid #ebebeb;
+}
+
+.freight__container .grid-row-3 .line-5 .f1 legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: small;
+  color: #535353;
+}
+
+.freight__container .grid-row-3 .line-5 .f1 .vol {
+  position: relative;
+  margin-left: 130%;
+  margin-top: -.5%;
+  color: #a8a9aa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.freight__container .grid-row-3 .line-5 .f2 {
+  padding-right: 4.2rem;
+  height: 2rem;
+  border: 1.8px solid #ebebeb;
+}
+
+.freight__container .grid-row-3 .line-5 .f2 legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: small;
+  color: #535353;
+}
+
+.freight__container .grid-row-3 .line-5 .f2 .wt {
+  position: relative;
+  margin-left: 130%;
+  margin-top: -.5%;
+  color: #a8a9aa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.freight__container .grid-row-4 {
+  margin-top: 31rem;
+  margin-left: -3%;
+  padding: 1rem 5rem 5rem 2rem;
+  background: white;
+  position: absolute;
+  width: 90%;
+  height: 85%;
+}
+
+.freight__container .grid-row-4 .line-6 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+}
+
+.freight__container .grid-row-4 .line-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.freight__container .grid-row-4 .line-7 .flex-first {
+  float: left;
+  width: 3.3rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+}
+
+.freight__container .grid-row-4 .line-7 .flex-second {
+  float: left;
+  color: #9b9c9e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+}
+
+.freight__container .grid-row-4 .line-7 .flex-second .des {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+  letter-spacing: 1px;
+  margin-bottom: 10%;
+  line-height: 2.5rem;
+  color: black;
+}
+
+.freight__container .grid-row-4 .line-8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.freight__container .grid-row-4 .line-8 .flex-first {
+  float: left;
+  width: 3.3rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+}
+
+.freight__container .grid-row-4 .line-8 .flex-second {
+  float: left;
+  color: #9b9c9e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  margin-right: 1rem;
+}
+
+.freight__container .grid-row-4 .line-8 .flex-second .des {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: medium;
+  letter-spacing: 1px;
+  margin-bottom: 10%;
+  line-height: 2.5rem;
+  color: black;
+}
+/*# sourceMappingURL=styles.css.map */
